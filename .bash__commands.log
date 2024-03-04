@@ -1,0 +1,485 @@
+#1695937956
+ls
+#1695938206
+logout
+#1706483683
+charm
+#1708983823
+ls
+#1708983972
+cd ..
+#1708983973
+ls
+#1708983978
+cd charm
+#1708983998
+$ ./build
+#1708984004
+./build
+#1708984073
+./build charm++ netlrts-linux-x86_64 smp icc tcp
+#1708984103
+./build charm++ netlrts-linux-x86_64 smp
+#1708984697
+cd examples/charm++/NQueen/
+#1708984698
+mak
+#1708984700
+make
+#1708984729
+./charmrun +p2 ./nqueen 12 6
+#1708984736
+./charmrun +p2 ./nqueen 12 6 ++local
+#1708984802
+cd ../leanmd/
+#1708984807
+make
+#1708985019
+./charmrun ++ppn 31 +p2 ./leanmd ++local
+#1708985056
+./charmrun ++ppn 31 +p6 ./leanmd ++local
+#1708985100
+./charmrun ++ppn 31 +p8 ./leanmd 2 2 2 1001 20 20 ++local
+#1708985154
+./charmrun ++ppn 31 +p8 ./leanmd 2 2 2 1001 ++local
+#1708985190
+./charmrun ++ppn31 +p8 ./leanmd 2 2 2 1001 ++local
+#1708985245
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local
+#1708985324
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local +balancer RefineLB
+#1708985419
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1708985703
+cd ..
+#1708985712
+cd ../..
+#1708985716
+make
+#1708985725
+cd src/
+#1708985728
+make
+#1708985737
+cd ck-ldb/
+#1708985740
+make
+#1708985798
+./Makefile_lb.sh 
+#1708985908
+cd ..
+#1708985915
+cd libs/
+#1708985928
+cd liveviz
+#1708985935
+cd liveViz
+#1708985948
+cd ck-libs/liveViz
+#1708985951
+make
+#1708986024
+cd ../..
+#1708986027
+cd ..
+#1708986035
+cd ck-ldb/
+#1708986054
+Makefile_lb.sh
+#1708986058
+./Makefile_lb.sh
+#1708986121
+cd ../../
+#1708986136
+cd examples/charm++/NQueen/
+#1708986162
+cd ../..
+#1708986176
+cd charm++/leanmd/
+#1708986185
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local +balancer RefineLB
+#1708986338
+cd ../../../src/ck-ldb/
+#1708986352
+run ./Makefile_lb.sh 
+#1708986361
+./Makefile_lb.sh 
+#1708986496
+./Makefile_lb.sh ++local
+#1708986525
+squeue -u syellapragada
+#1708986866
+cd ../..
+#1708986883
+make charm
+#1708986886
+make charm++
+#1708986956
+cd src/ck-ldb/
+#1708986963
+make depends
+#1708986983
+make charm++
+#1708987113
+cd ../../..
+#1708987116
+ls
+#1708987135
+git clone https://charm.cs.illinois.edu/gerrit/ccs_tools
+#1708991536
+cd charm/examples/
+#1708991550
+cd charm++/leanmd/
+#1708991583
+exit
+#1709001236
+cd examples/charm++/leanmd/
+#1709001242
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001
+#1709001263
+logout
+#1709001268
+exit
+#1709001288
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001
+#1709001296
+cd examples/charm++/leanmd/
+#1709001299
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001
+#1709001308
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local
+#1709001469
+run.sh
+#1709001473
+./run.sh
+#1709001533
+sbatch run.sh 
+#1709002166
+sbatch ./run.sh 
+#1709002218
+sbatch run.sh 
+#1709002281
+sbatch ./run.sh 
+#1709003294
+cd ../../..
+#1709003301
+cd src/ck-ldb
+#1709003320
+sbatch Makefile_lb.sh 
+#1709005681
+cd ../..
+#1709005689
+cd examples/charm++/leanmd/
+#1709005704
+sbatch ./run.sh 
+#1709005710
+sbatch run.sh 
+#1709005735
+ssh $syellapragada@dt-login01 sbatch run.sh
+#1709005763
+ssh
+#1709006007
+sbatch run.sh 
+#1709006028
+ssh $syellapragada@dt-login01 sbatch ~/charm/examples/charm++/leanmd/run.sh
+#1709006242
+sbatch run.sh 
+#1709006326
+man sbatch
+#1709007807
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local
+#1709007826
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709007891
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local
+#1709007904
+./charmrun ++ppn 31 +p5 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709008000
+./charmrun ++ppn 31 25 .6leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709008024
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local
+#1709008056
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709082493
+cd examples/charm++/leanmd/
+#1709082555
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709082665
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local -module EveryLB
+#1709082692
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709082701
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local -module GreedyLB
+#1709082742
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local -module CommonLB
+#1709082793
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 ++local +balancer GreedyLB
+#1709083063
+sbatch run.sh 
+#1709083090
+man delta
+#1709083098
+man sbatch
+#1709083349
+sbatch run.sh 
+#1709083514
+accounts
+#1709083537
+sbatch run.sh 
+#1709083738
+squeue -u syellapragada
+#1709083819
+sbatch run.sh 
+#1709083828
+squeue -u syellapragada
+#1709083936
+sbatch run.sh 
+#1709083944
+squeue -u syellapragada
+#1709084071
+sbatch run.sh 
+#1709084083
+squeue -u syellapragada
+#1709084122
+sbatch run.sh 
+#1709084124
+squeue -u syellapragada
+#1709313288
+cd charm/examples/charm++/leanmd/
+#1709313293
+make
+#1709313315
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer MetisLB +LBDebug 1 ++local
+#1709313357
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709313364
+make
+#1709313370
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709313495
+cd ../load_balancing/
+#1709313498
+make
+#1709313555
+./charmrun +p4 ./stencil3d 64 32 +balancer GreedyLB +LBDebug 1 ++local
+#1709313582
+./stencil3d +p4 64 32 +balancer GreedyLB +LBDebug 1 ++local
+#1709313588
+cd stencil3d/
+#1709313591
+./charmrun +p4 ./stencil3d 64 32 +balancer GreedyLB +LBDebug 1 ++local
+#1709313628
+cd ../../leanmd/
+#1709313634
+make
+#1709313654
+make clean
+#1709313658
+make
+#1709313685
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709313753
+make
+#1709313766
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709314377
+sbatch run.sh 
+#1709314410
+squeue -u syellapragada
+#1709314443
+sbatch run.sh 
+#1709314445
+squeue -u syellapragada
+#1709314498
+sbatch run.sh 
+#1709314500
+squeue -u syellapragada
+#1709314581
+sbatch run.sh 
+#1709314584
+squeue -u syellapragada
+#1709314885
+sbatch run.sh 
+#1709314888
+squeue -u syellapragada
+#1709315048
+sbatch run.sh 
+#1709315052
+squeue -u syellapragada
+#1709315177
+sbatch run.sh 
+#1709315179
+squeue -u syellapragada
+#1709315326
+sbatch run.sh 
+#1709315329
+squeue -u syellapragada
+#1709315361
+sbatch run.sh 
+#1709315375
+squeue -u syellapragada
+#1709315404
+sbatch run.sh 
+#1709315411
+squeue -u syellapragada
+#1709315441
+sbatch run.sh 
+#1709315443
+squeue -u syellapragada
+#1709315533
+sbatch run.sh 
+#1709315535
+squeue -u syellapragada
+#1709315989
+exit
+#1709531139
+cd charm/examples/charm++/leanmd/
+#1709531141
+make
+#1709531144
+make clean 
+#1709531147
+make
+#1709531182
+./charmrun ++ppn 2 +p6 ./leanmd 2 2 2 1001 +balancer RefineLB +LBDebug 1 ++local
+#1709531215
+sbatch run.sh 
+#1709531221
+squeue -u syellapragada
+#1709531390
+cd ../.../..
+#1709531392
+cd ../.../../
+#1709531401
+cd ../../../
+#1709531403
+cd ..
+#1709531431
+ls
+#1709531448
+git clone https://github.com/UIUC-PPL/projections
+#1709531460
+cd projections/
+#1709531468
+make
+#1709531603
+gradle -v
+#1709531614
+load gradle
+#1709531849
+module load gradle
+#1709531936
+java
+#1709531947
+java -v
+#1709531951
+java --v
+#1709531958
+java --version
+#1709532105
+module load java
+#1709532121
+module load java/11.0.2
+#1709532133
+module --ignore_cache load "java/11.0.2
+java --version
+
+:q
+
+
+
+build.gradle 
+exit
+quit
+#1709532865
+cd charm/examples/charm++/leanmd/
+#1709532868
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 --enable-tracing ++local
+#1709532913
+make clean 
+#1709532918
+make
+#1709532960
+make projections 
+#1709532983
+make clean 
+#1709533000
+make all
+#1709533032
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 --enable-tracing ++local
+#1709533285
+make clean
+#1709533296
+make
+#1709533321
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 ++local
+#1709533466
+make
+#1709533757
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 ++local
+#1709533856
+make
+#1709534111
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 ++local
+#1709534130
+make
+#1709534176
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 ++local
+#1709534185
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709534201
+./charmrun +p4 ./leanmd 3 3 3 20 ++local
+#1709534286
+./charmrun +ppn 31 +p93 ./leanmd 3 3 3 20 ++local
+#1709534304
+./charmrun +ppn 31 +p60 ./leanmd 3 3 3 20 ++local
+#1709534311
+./charmrun +ppn 2 +p6 ./leanmd 3 3 3 20 ++local
+#1709534336
+./charmrun +ppn 2 +p6 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709534352
+./charmrun ++ppn 2 +p6 ./leanmd 3 3 3 20 +balancer GreedyLB +LBDebug 1 ++local
+#1709534367
+./charmrun ++ppn 2 +p6 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 ++local
+#1709534383
+./charmrun ++ppn 2 +p6 ./leanmd 3 3 3 20 ++local
+#1709534400
+./charmrun ++ppn 2 +p6 ./leanmd 3 3 3 20 +balancer GreedyRefineLB +LBDebug 1 ++local
+#1709534411
+./charmrun ++ppn 2 +p6 ./leanmd 3 3 3 20 +balancer MetisLB +LBDebug 1 ++local
+#1709534728
+exit
+#1709532216
+cd projections/
+#1709532226
+ls
+#1709532251
+cd build.gradle
+#1709532258
+build.gradle
+#1709532267
+./buil.gradle
+#1709532405
+java -version
+#1709532428
+sdk install gradle 8.6
+#1709532604
+curl -s https://get.sdkman.io | bash
+#1709532609
+sdk install gradle 8.6
+#1709532664
+source "/u/syellapragada/.sdkman/bin/sdkman-init.sh"
+#1709532671
+sdk help
+#1709532679
+sdk install gradle 8.6
+#1709532706
+make
+#1709532842
+./charmrun +p4 ./leanmd 3 3 3 20 +balancer RefineLB +LBDebug 1 --enable-tracing ++local
+#1709533066
+./bin/projections ~/charm/examples/charm++/leanmd/leanmd.sts 
+#1709533077
+./bin/projections
+#1709534732
+exit
