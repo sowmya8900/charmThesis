@@ -10,3 +10,4 @@ which start the benchmark again for the next size, until the largest size we car
 
 It may be simpler for now to just do all power of 2 message sizes betwee 8 and 64k, but maybe instead of doubling, we could quadruple message size (to redduce the number of experiments).. 8, 32, 128, ...
 
+

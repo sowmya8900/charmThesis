@@ -1,0 +1,19 @@
+mainmodule pingack_fixedmsg {
+  readonly CProxy_main mainProxy;
+  mainchare main {
+    entry main(CkArgMsg *);
+    entry void maindone(void);
+  };
+
+  message PingMsg;
+
+  group PingG {
+    entry PingG(void);
+    entry [expedited] void start();
+    entry [expedited] void send_msgs();
+    entry [expedited] void bigmsg_recv(PingMsg *);
+    entry [expedited] void pe0ack();
+    entry [expedited] void print_stats_pe1();
+    entry [expedited] void print_results();
+  }
+};

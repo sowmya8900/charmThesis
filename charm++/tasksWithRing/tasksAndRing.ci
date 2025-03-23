@@ -1,0 +1,19 @@
+mainmodule tasksAndRing {
+  readonly CProxy_Main mainProxy;
+  readonly int numChares;
+  readonly int fibmax;
+
+  initproc taskHandlerInitcall();
+  
+  mainchare Main {
+    entry Main(CkArgMsg *m);
+  };
+
+  array [1D] TasksAndRing {
+    entry TasksAndRing(void);
+    entry [expedited] void forwardRing();
+    entry void startTasks();
+   entry void tasksCompleted();
+    entry [reductiontarget] void done(void);
+};        	
+};
